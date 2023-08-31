@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h1 class="head">Heart Attack Predictor</h1>
+
+
+    <div class="container">
+
+        <form action='/predict' method="POST" >
+
+            <label for="Age" class="ok">Age:</label>
+            <input type="text" name="Age" class="ok" id="Age" value="" required>
+
+            <legend class="ok">Do You Have Anaemia?</legend>
+            <label for="yes" class="sex">Yes</label>
+            <input type="radio" name="Anaemia" id="yes" value="1" required>
+            <label for="no" class="sex">NO</label>
+            <input type="radio" name="Anaemia" id="no" value="0" required>
+
+
+            <label for="Creatinine_phosphokinase" class="ok">Creatinine_phosphokinase:</label>
+            <input type="text" name="Creatinine_phosphokinase" id="Creatinine_phosphokinase" class="ok" required> 
+
+            <legend class="ok">Do You Have Diabetes:</legend>
+            <label for="yes" class="sex">Yes</label>
+            <input type="radio" name="Diabetes" id="yes" value="1" required>
+            <label for="no" class="sex">NO</label>
+            <input type="radio" name="Diabetes" id="no" value="0" required>
+
+
+            <label for="Ejection_fraction" class="ok">Ejection_fraction:</label>
+            <input type="text" name="Ejection_fraction" id="Ejection_fraction" class="ok" required>
+
+            
+            
+            <legend class="ok">Do You Have High_blood_pressure:</legend>
+            <label for="Yes" class="sex">Yes</label>
+            <input type="radio" name="High_blood_pressure" id="Yes" value="1" required >
+            <label for="No" class="sex">No</label>
+            <input type="radio" name="High_blood_pressure" id="No" value="0" required>
+          
+            <label for="Platelets" class="ok">Platelets:</label>
+            <input type="text" name="Platelets" id="Platelets" class="ok" required>
+
+            <label for="Serum_creatinine" class="ok">Serum_creatinine:</label>
+            <input type="text" name="Serum_creatinine" id="Serum_creatinine" class="ok" required>
+
+            <label for="Serum_sodium" class="ok">Serum_sodium:</label>
+            <input type="text" name="Serum_sodium" id="Serum_sodium" class="ok" required>
+
+            <legend class="ok">Sex :</legend>
+            <label for="male" class="sex">Male</label>
+            <input type="radio" name="sex" id="male" value="1" required>
+            <label for="female" class="sex">Female</label>
+            <input type="radio" value="0" name="sex" id="female" required>
+            <label for="other" class="sex">Others</label>
+            <input type="radio" name="sex" id="other" value="0" required>
+
+
+            <legend class="ok">Do You Smoke?</legend>
+            <label for="yes" class="sex">Yes</label>
+            <input type="radio" name="smoke" id="yes" value="1" required>
+            <label for="no" class="sex">NO</label>
+            <input type="radio" name="smoke" id="no" value="0" required> 
+
+            <legend class="ok">Follow-up period:</legend>
+            <input type="text" name="fup" id="" class="ok" required>
+            
+            <button type="submit" class="ok">Predict Now</button>
+        </form>
+    </div>
+  
+</body>
+
+</html>

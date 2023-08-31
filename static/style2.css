@@ -1,0 +1,19 @@
+
+body{
+
+    background-image:url("/static/images/5504042.jpg");
+    background-size: cover;
+}
+
+.last{
+
+    margin: 5% 0 0 10%;
+    
+}
+
+.para{
+
+    font-size: larger;
+    font-weight: 500;
+   
+}
